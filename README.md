@@ -1,11 +1,16 @@
-# Notebook Extend Markdown Renderer Sample
+# Notebook Extend Markdown Renderer for MyST
 
-Demonstrates a how a custom [notebook renderer](https://code.visualstudio.com/api/extension-guides/notebook#notebook-renderer) can extend VS Code's built-in notebook markdown renderer (similar approaches can be used to extend other notebook renderers).
+A hacked together extension based on combining the notebook extension sample:  
+https://github.com/microsoft/vscode-extension-samples/tree/main/notebook-extend-markdown-renderer-sample  
 
-This extension adds `:emoji:` rendering support to the built-in markdown renderer used for notebooks. Try it out by writing: `:cat:` or `:smile:` in a markdown cell.
+And the MyST-VS-code renderer extension  
+https://github.com/executablebooks/myst-vs-code 
 
-### Running this Sample
+This is only intended as a demonstration and a hacky stopgap until notebook rendering is supported in the official myst-vs-code extension. 
 
- 1. `cd notebook-extend-markdown-renderer-sample`
- 1. `code-insiders .`: Open the folder in VS Code Insiders
- 1. Hit `F5` to build+debug
+Was inspired in response to https://github.com/executablebooks/myst-vs-code/issues/31  
+
+This extension keeps the original `:emoji:` rendering support from the example, plus adds most of the MyST syntax from the original MyST extension. It doesn't allow any selection of MyST rendering extensions but does do dollarmath and amsmath since those are what I use in my day to day.  
+
+The extension can be built youself, or I have provided a .vsix package you can install directly as an extension into vscode. 
+
