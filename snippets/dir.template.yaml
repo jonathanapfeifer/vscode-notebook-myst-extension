@@ -1,0 +1,37 @@
+attention: null
+caution: null
+danger: null
+error: null
+important: null
+hint: null
+note: null
+seealso: null
+tip: null
+warning: null
+
+toctree: null
+sidebar:
+  arguments: title
+topic:
+  arguments: title
+  content: false
+rubric:
+  arguments: title
+  content: false
+
+image:
+  arguments: path/to/image
+  content: false
+figure:
+  arguments: path/to/image
+  content: caption
+
+code:
+  arguments: python
+code-block:
+  arguments: python
+code-cell:
+  arguments: ipython
+  options: {"tags": []}
+raw-cell:
+  options: {"raw_mimetype": "text/plain"}
